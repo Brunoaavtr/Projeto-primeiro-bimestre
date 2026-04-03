@@ -24,9 +24,9 @@ body{
 
 header{
     position: fixed;     /*parado na tela*/
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 0;              /*topo */
+    left: 0;             
+    width: 100%;         /* Ocupa toda a largura da tela */
     z-index: 1000;       /* Fica na frente*/
     background-color: rgb(11, 11, 11);
     padding: 10px;
