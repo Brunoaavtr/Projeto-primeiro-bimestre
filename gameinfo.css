@@ -65,38 +65,3 @@ header nav a:hover{
     opacity: 30%;
     z-index: 1;
 }
-.logo{
-    position:fixed;
-    top: 25%;
-    z-index: 2;
-    width: 50%;
-}
-
-aside{
-    padding: 50px 300px;
-    z-index: 2;
-    position: fixed;
-    top: 50%;
-    color: white;
-    text-align: center;
-    line-height: 1.6;
-}
-.destaque{
-    color: rgb(255, 62, 169);
-}
-.button{
-    padding: 30px 60px;
-    position:fixed;
-    top: 80%;
-    z-index: 2;
-    background-color: rgb(93, 247, 225);
-    color: rgb(26, 26, 26);
-    font-family: "Press Start 2P", system-ui;
-    border: 5px solid rgb(26, 26, 26);
-    transition: all 1s; 
-}
-button:hover{
-    background-color: rgb(255, 62, 169);
-    color: rgb(26, 26, 26);
-    padding: 40px 70px;
-}
