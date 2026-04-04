@@ -100,13 +100,3 @@ button:hover{
     color: rgb(26, 26, 26);
     padding: 40px 70px;
 }
-@media (max-width: 480px) {
-    header{
-        text-align: center;
-        height: 200px;
-        display: inline-block;
-    }
-    header nav, main{
-        width: 100%;
-    }
-}
