@@ -15,7 +15,7 @@
 
 body{
     background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('testecaveira.png');
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,4 +55,96 @@ header nav a:hover{
 section{
     position: relative;
     top: 100px;
+    width: 40%;
+    float: left;
 }
+section h1{
+    position: relative;
+    margin: 7px 22px;
+    color:  rgb(93, 247, 225);
+    text-decoration: underline;
+}
+section img{
+    width: 100%;
+    margin: 15px;
+    border: 7px solid;
+    border-color: rgb(21, 21, 21);;
+    border-radius: 2px;
+}
+.apresentacao, section{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.apresentacao{
+    position: relative;
+    top: 160px;
+    width: 60%;
+    float: left;
+}
+.apresentacao h2{
+    position: relative;
+    border: 15px;
+    color: rgb(93, 247, 225)
+}
+.apresentacao p{
+    width: 100%;
+    border: 15px;
+    color: white;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+.destaque{
+    color: rgb(255, 62, 169);
+}
+.dor{
+    position:relative;
+    float:left;
+    padding:  150px 0px 50px 150px;
+
+}
+.dor h3{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    color:  rgb(255, 62, 169);
+    margin: 7px 22px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,16,66%);
+    padding: 7px 22px;
+
+}
+.grid .colunaum{
+    text-align: center;
+    border: 7px solid rgb(21, 21, 21);
+    background-color: rgb(255, 62, 169);
+    
+}
+.colunaum, .colunadois, i{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+.desejos{
+    position:relative;
+    float:right;
+    padding: 150px 150px 50px 0px;
+    
+}
+.desejos h3{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    color:  rgb(93, 247, 225);
+    margin: 7px 22px;
+}
+.grid .colunadois{
+    text-align: center;
+    border: 7px solid rgb(21, 21, 21);
+    background-color: rgb(93, 247, 225);
+}
+.btn{
+    color: white;
+    padding: 5px;
+}
+
