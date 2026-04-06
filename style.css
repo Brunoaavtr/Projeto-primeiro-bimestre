@@ -75,6 +75,9 @@ header nav a:hover{
     top: 25%;
     z-index: 2;
     width: 50%;
+    animation-name: pingar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 aside{
@@ -104,4 +107,49 @@ button:hover{
     background-color: rgb(255, 62, 169);
     color: rgb(26, 26, 26);
     padding: 40px 70px;
+}
+
+.menu{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+@keyframes pingar{
+    0%{margin-top: 0px;}
+    50%{margin-top: -10px;}
+}
+
+@media (max-width: 420px){
+    main{
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: 100%;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+    header nav{
+        display: none;
+    }
+    header img{
+        width: 300px;
+    }
+    .menu{
+        display: block;
+        border: 1px solid #fff;
+        padding: 15px 10px;
+        color:#fff;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
 }

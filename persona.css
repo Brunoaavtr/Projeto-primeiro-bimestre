@@ -147,4 +147,42 @@ section img{
     color: white;
     padding: 5px;
 }
+.menu{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+@media (max-width: 420px){
+    main{
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: 100%;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+    header nav{
+        display: none;
+    }
+    header img{
+        width: 300px;
+    }
+    .menu{
+        display: block;
+        border: 1px solid #fff;
+        padding: 15px 10px;
+        color:#fff;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+}
 
