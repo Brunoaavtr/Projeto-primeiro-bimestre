@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Limbo Souls</title>
+    <meta charset="utf-8">
+    <meta name="description"  content="Projeto do primeiro bimestre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="IMG/logobarra.png">
+   
+   <link rel="stylesheet" href="css/midia.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Home">
+        <img src="IMG/LogoP.png" alt="home" title="Home" width="13%">
+        </a>
+        <a href="javascript:mostrarmenu()" class="menu">
+        <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
+        </a>
+            <nav>
+                <a href="index.html" title="Home">HOME</a>
+                <a href="midia.html" title="midia">MIDIA</a>
+                <a href="persona.html" title="PERSONA">PERSONA</a>
+                <a href="login.html" title="LOGIN">LOGIN</a>
+            </nav>
+    </header>
+
+   <section class="anuncio">
+    <h2>LATEST NEWS!!</h2>
+    
+    <div class="apresentacao">
+        <!-- Controles (Botões de seleção) -->
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+        <div class="slides">
+            <div class="slide s1">
+                <img src="IMG/novaarea.png" alt="News 1">
+                <div class="novidade">
+                    <span>UPDATE 1.1</span>
+                    <h3>Nova Área:Sparks of the past </h3>
+                    <p>ATUALIZAÇÃO: 10/05/2026</p>
+                </div>
+            </div>
+            <div class="slide s2">
+                <img src="IMG/The Queen Who Never Was2.png" alt="News 2">
+                <div class="novidade">
+                    <span>BOSS</span>
+                    <h3>NEW BOSS:The Queen Of  Burned Souls</h3>
+                </div>
+            </div>
+            <div class="slide s3">
+                <img src="IMG/image_d2f2104d.png" alt="News 3">
+                <div class="novidade">
+                    <span>SHOP</span>
+                    <h3>NOSSA LOJINHA ABRIRA OFICIALMENTE</h3>
+                    <p>Leve um pedaço do limbo para casa!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegação Manual (Bolinhas/Botões) -->
+        <div class="navigation">
+            <label for="slide1" class="bar"></label>
+            <label for="slide2" class="bar"></label>
+            <label for="slide3" class="bar"></label>
+        </div>
+    </div>
+</section>
+<section class="novaarea">
+    <h2>O Canto das Almas Ardentes</h2>
+    <p>Explore um campo desolado onde as chamas etéreas consomem o que restou do passado.</p>
+    
+    <div class="galeria1">
+        <img src="IMG/novaarea.png" alt="novafase">
+    </div>
+</section>
+<section class="novosmobs">
+    <h2>O Canto das Almas Ardentes</h2>
+    <p>Explore um campo desolado onde as chamas etéreas consomem o que restou do passado.</p>
+    
+    <div class="galeria2">
+        <img src="IMG/binro.png" alt="arqueiro">
+        <img src="IMG/mub.png" alt="fazbum">
+        <img src="IMG/striker.png" alt="assasino">
+        <img src="IMG/The Queen Who Never Was.png" alt="rainha">
+        <img src="IMG/machado.png" alt="machado">
+
+    </div>
+</section>
+    <script>
+        let counter = 1;
+    setInterval(() => {
+        document.getElementById('slide' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    }, 5000); // Muda a cada 5 segundos
+
+
+    function mostrarmenu(){
+        document.querySelector("header nav").classList.toggle("mostrar");
+    }
+    </script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('testecaveira.png');
+    background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('Backgraund.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,7 @@ section img{
 .dor{
     position:relative;
     float:left;
-    padding:  150px 0px 50px 150px;
+    padding:  150px 0px 50px 230px;
 
 }
 .dor h3{
@@ -128,7 +128,7 @@ section img{
 .desejos{
     position:relative;
     float:right;
-    padding: 150px 150px 50px 0px;
+    padding: 150px 230px 50px 0px;
     
 }
 .desejos h3{

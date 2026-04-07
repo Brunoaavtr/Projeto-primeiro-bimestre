@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wdth,wght@100,400&display=swap');
+.roboto-uniquifier{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('Backgraund.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family:"Press Start 2P", system-ui;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+header{
+    position: fixed;     /*parado na tela*/
+    top: 0;              /*topo */
+    left: 0;             
+    width: 100%;         /* Ocupa toda a largura da tela */
+    z-index: 1000;       /* Fica na frente*/
+    background-color: rgb(26, 26, 26);
+    padding: 10px;
+    box-shadow: 1px 1px 4px rgb(93, 247, 225);
+    box-sizing: border-box;
+}
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+header nav a{
+    text-decoration: none;
+    color:rgb(93, 247, 225);
+    margin: 15px;
+    transition: all 1s;
+}
+header nav a:hover{
+    color:rgb(255, 62, 169);
+    text-decoration: underline;
+}
+
+
+
+.anuncio {
+    width: 60%;
+    padding: 150px 0px 100px 0px;
+    text-align: center;
+    margin: 0 auto;       /* 0 em cima/baixo e auto nas laterais centraliza o bloco */
+    float: none; 
+}
+
+.anuncio h2 {
+    font-family: 'Press Start 2P';
+    color: rgb(93, 247, 225);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.apresentacao {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 8px solid rgb(15, 15, 15);
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* 100% para cada slide */
+    height: 100%;
+    transition: 0.6s ease-in-out;
+    animation: slider_automatico 15s infinite;
+}
+
+.slide {
+    width: 33.33%;
+    position: relative;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9); /* Escurece para o texto aparecer */
+}
+
+/* Informações sobre a notícia */
+.novidade {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+}
+
+.novidade span {
+    background: rgb(255, 62, 169);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.novidade h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Lógica de Transição (Seletores de Radio) */
+#slide1:checked ~ .slides { margin-left: 0; }
+#slide2:checked ~ .slides { margin-left: -100%; }
+#slide3:checked ~ .slides { margin-left: -200%; }
+
+/* Estilo dos Botões de Seleção (Navegação) */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.bar:hover { background: rgb(33, 87, 79); }
+
+/* Destaque no botão ativo */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background: rgb(93, 247, 225);
+    border-color: rgb(93, 247, 225);
+    width: 70px; /* Efeito de expansão igual ao site original */
+    border-radius: 20px;
+}
+
+/* Esconder os inputs de radio */
+input[name="slide"] { display: none; }
+
+.novaarea {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.novaarea h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.novaarea p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Container das imagens */
+.galeria1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Essencial para celulares */
+}
+
+.galeria1 img {
+    /* 100% / 4 imagens = 25%. Subtraímos o gap para caber na linha */
+    width: calc(50% - 20px); 
+    min-width: 200px; /* Garante que não fiquem minúsculas */
+    height: 250px;   /* Altura fixa para manter o alinhamento */
+    object-fit: cover;
+    border: 4px solid rgb(26, 26, 26);
+    transition: 0.3s;
+}
+.galeria1 :hover {
+    border-color: rgb(93, 247, 225); /* Cor ciano do seu dragão */
+    transform: translateY(-5px);    /* Leve subida para dar profundidade */
+}
+
+.novosmobs {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.novosmobs h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.novosmobs p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Container para as 4 imagens */
+.galeria2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Essencial para celulares */
+}
+
+.galeria2 img {
+    /* 100% / 4 imagens = 25%. Subtraímos o gap para caber na linha */
+    width: calc(25% - 20px); 
+    min-width: 200px; /* Garante que não fiquem minúsculas */
+    height: 250px;   /* Altura fixa para manter o alinhamento */
+    object-fit: cover;
+    border: 4px solid rgb(26, 26, 26);
+    transition: 0.3s;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.galeria2 img:hover {
+    border-color: rgb(93, 247, 225); /* Cor ciano do seu dragão */
+    transform: translateY(-5px);    /* Leve subida para dar profundidade */
+}
+@keyframes slider_automatico {
+    0%, 20% { margin-left: 0; }            /* Slide 1 parado */
+    33%, 53% { margin-left: -100%; }       /* Slide 2 parado */
+    66%, 86% { margin-left: -200%; }       /* Slide 3 parado */
+    100% { margin-left: 0; }               /* Volta ao início */
+}

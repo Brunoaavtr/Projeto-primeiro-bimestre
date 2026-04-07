@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('testecaveira.png');
+    background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('Backgraund.png');
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
