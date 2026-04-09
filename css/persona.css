@@ -68,8 +68,7 @@ section img{
     width: 100%;
     margin: 15px;
     border: 7px solid;
-    border-color: rgb(21, 21, 21);;
-    border-radius: 2px;
+    border: 8px  solid rgb(21,21,21);
 }
 .apresentacao, section{
     padding: 30px;
@@ -118,7 +117,7 @@ section img{
 .grid .colunaum{
     text-align: center;
     border: 7px solid rgb(21, 21, 21);
-    background-color: rgb(255, 62, 169);
+    background-color: rgb(26, 26, 26);
     
 }
 .colunaum, .colunadois, i{
@@ -141,7 +140,7 @@ section img{
 .grid .colunadois{
     text-align: center;
     border: 7px solid rgb(21, 21, 21);
-    background-color: rgb(93, 247, 225);
+    background-color: rgb(26, 26, 26);
 }
 .btn{
     color: white;
@@ -152,6 +151,41 @@ section img{
 }
 .mostrar{
     display: block;
+}
+.button{
+    display: block;
+    margin: 150px auto;
+    padding: 30px 60px;
+    background-color: rgb(93, 247, 225);
+    color: rgb(26, 26, 26);
+    font-family: "Press Start 2P", system-ui;
+    border: 5px solid rgb(26, 26, 26);
+    transition: all 1s; 
+    box-sizing: border-box;
+}
+button:hover{
+    background-color: rgb(255, 62, 169);
+    color: rgb(26, 26, 26);
+    padding: 40px 70px;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: rgb(93, 247, 225);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+    animation-name: pingar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes pingar{
+    0%{margin-bottom: 0px;}
+    50%{margin-bottom: +10px;}
 }
 @media (max-width: 420px){
     main{
