@@ -60,30 +60,31 @@ header nav a:hover{
     margin-bottom: 30px;
    
 }
-section{
+.section1, .section2{
     position: relative;
     top: 100px;
     width: 40%;
     float: left;
     
+    
 }
-section h1{
+.section1 h1, .section2 h1{
     position: relative;
     margin: 7px 22px;
     color:  rgb(93, 247, 225);
     text-decoration: underline;
 }
-section img{
+.section1 img, .section2 img{
     width: 100%;
     margin: 15px;
     border: 7px solid;
     border: 8px  solid rgb(21,21,21);
 }
-.apresentacao, section{
+.apresentacao1, .section1, .apresentacao2, .section2{
     padding: 30px;
     box-sizing: border-box;
 }
-.apresentacao{
+.apresentacao1, .apresentacao2{
     position: relative;
     top: 185px;
     width: 50%;
@@ -93,65 +94,19 @@ section img{
     background-color: rgb(26, 26, 26);
     box-sizing: border-box;
 }
-.apresentacao h2{
+.apresentacao1 h2, .apresentacao2 h2{
     position: relative;
     border: 15px;
     color: rgb(93, 247, 225)
 }
-.apresentacao p{
+.apresentacao1 p, .apresentacao2 p {
     width: 100%;
     border: 15px;
     color: white;
-    box-sizing: border-box;
     line-height: 1.6;
 }
 .destaque{
     color: rgb(255, 62, 169);
-}
-.section2{
-    position: relative;
-    top: 100px;
-    width: 40%;
-    float: left;
-    
-}
-.section2 h1{
-    position: relative;
-    margin: 7px 22px;
-    color:  rgb(93, 247, 225);
-    text-decoration: underline;
-}
-.section2 img{
-    width: 100%;
-    margin: 15px;
-    border: 7px solid;
-    border: 8px  solid rgb(21,21,21);
-}
-.apresentacao2, section{
-    padding: 30px;
-    box-sizing: border-box;
-}
-.apresentacao2{
-    position: relative;
-    top: 185px;
-    width: 50%;
-    margin: 0px 20px;
-    float: left;
-    border: 8px  solid rgb(21,21,21);
-    background-color: rgb(26, 26, 26);
-    box-sizing: border-box;
-}
-.apresentacao h2{
-    position: relative;
-    border: 15px;
-    color: rgb(93, 247, 225)
-}
-.apresentacao p{
-    width: 100%;
-    border: 15px;
-    color: white;
-    box-sizing: border-box;
-    line-height: 1.6;
 }
 
 
