@@ -48,7 +48,7 @@ header nav a{
     transition: all 1s;
 }
 header nav a:hover{
-    color:rgb(197, 39, 126);
+    color:rgb(255, 62, 169);
     text-decoration: underline;
 }
 
@@ -89,7 +89,7 @@ header nav a:hover{
     
 }
 .destaque{
-    color: rgb(255, 62, 169);
+    color: rgb(144, 0, 255);
 }
 button{
     padding: 30px 60px;
