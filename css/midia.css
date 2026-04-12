@@ -54,7 +54,7 @@ header nav a:hover{
 
 .history{
     width: 90%;
-    margin: auto;
+    margin: 150px auto;
     border: 8px  solid rgb(21,21,21);
     background-color: rgb(26, 26, 26);
     padding: 20px;
@@ -224,14 +224,12 @@ button:hover{
 }
 
 .bar:hover { background: rgb(33, 87, 79); }
-
-/* Destaque no botão ativo */
 #slide1:checked ~ .navigation label[for="slide1"],
 #slide2:checked ~ .navigation label[for="slide2"],
 #slide3:checked ~ .navigation label[for="slide3"] {
     background: rgb(93, 247, 225);
     border-color: rgb(93, 247, 225);
-    width: 70px; /* Efeito de expansão igual ao site original */
+    width: 70px; 
     border-radius: 20px;
 }
 input[name="slide"] { display: none; }
@@ -246,7 +244,7 @@ input[name="slide"] { display: none; }
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Essencial para celulares */
+    flex-wrap: wrap; /* celulares */
 }
 
 .galeria1 img {
@@ -307,8 +305,8 @@ footer{
     50%{margin-bottom: +10px;}
 }
 @keyframes slider_automatico {
-    0%, 20% { margin-left: 0; }            /* Slide 1 parado */
-    33%, 53% { margin-left: -100%; }       /* Slide 2 parado */
-    66%, 86% { margin-left: -200%; }       /* Slide 3 parado */
-    100% { margin-left: 0; }               /* Volta ao início */
+    0%, 20% { margin-left: 0; } 
+    33%, 53% { margin-left: -100%; }
+    66%, 86% { margin-left: -200%; }
+    100% { margin-left: 0; }              
 }

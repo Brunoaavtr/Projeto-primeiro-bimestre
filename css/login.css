@@ -12,7 +12,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 body{
     background-image: linear-gradient(rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.7)), url('Backgraund.png');
     background-attachment: fixed;
@@ -26,13 +25,12 @@ body{
     padding: 0;
     z-index: 1;
 }
-
 header{
-    position: fixed;     /*parado na tela*/
-    top: 0;              /*topo */
+    position: fixed;
+    top: 0;
     left: 0;             
-    width: 100%;         /* Ocupa toda a largura da tela */
-    z-index: 1000;       /* Fica na frente*/
+    width: 100%;
+    z-index: 1000; /*fica frente*/
     background-color: rgb(26, 26, 26);
     padding: 10px;
     box-shadow: 1px 1px 4px rgb(93, 247, 225);
@@ -52,137 +50,3 @@ header nav a:hover{
     color:rgb(255, 62, 169);
     text-decoration: underline;
 }
-section{
-    position: relative;
-    top: 100px;
-    width: 40%;
-    float: left;
-}
-section h1{
-    position: relative;
-    margin: 7px 22px;
-    color:  rgb(93, 247, 225);
-    text-decoration: underline;
-}
-section img{
-    width: 100%;
-    margin: 15px;
-    border: 7px solid;
-    border-color: rgb(21, 21, 21);;
-    border-radius: 2px;
-}
-.apresentacao, section{
-    padding: 30px;
-    box-sizing: border-box;
-}
-.apresentacao{
-    position: relative;
-    top: 160px;
-    width: 60%;
-    float: left;
-}
-.apresentacao h2{
-    position: relative;
-    border: 15px;
-    color: rgb(93, 247, 225)
-}
-.apresentacao p{
-    width: 100%;
-    border: 15px;
-    color: white;
-    box-sizing: border-box;
-    line-height: 1.6;
-}
-.destaque{
-    color: rgb(255, 62, 169);
-}
-.dor{
-    position:relative;
-    float:left;
-    padding:  150px 0px 50px 230px;
-
-}
-.dor h3{
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-    color:  rgb(255, 62, 169);
-    margin: 7px 22px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(6,16,66%);
-    padding: 7px 22px;
-
-}
-.grid .colunaum{
-    text-align: center;
-    border: 7px solid rgb(21, 21, 21);
-    background-color: rgb(255, 62, 169);
-    
-}
-.colunaum, .colunadois, i{
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-}
-.desejos{
-    position:relative;
-    float:right;
-    padding: 150px 230px 50px 0px;
-    
-}
-.desejos h3{
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-    color:  rgb(93, 247, 225);
-    margin: 7px 22px;
-}
-.grid .colunadois{
-    text-align: center;
-    border: 7px solid rgb(21, 21, 21);
-    background-color: rgb(93, 247, 225);
-}
-.btn{
-    color: white;
-    padding: 5px;
-}
-.menu{
-    display: none;
-}
-.mostrar{
-    display: block;
-}
-@media (max-width: 420px){
-    main{
-        width: 100%;
-    }
-    .grid{
-        grid-template-columns: 100%;
-    }
-    header nav ul{
-        display: block;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    header nav ul li{
-        width: 100%;
-    }
-    header nav{
-        display: none;
-    }
-    header img{
-        width: 300px;
-    }
-    .menu{
-        display: block;
-        border: 1px solid #fff;
-        padding: 15px 10px;
-        color:#fff;
-        float: right;
-        margin-top: 15px;
-        border-radius: 5px;
-    }
-}
-
