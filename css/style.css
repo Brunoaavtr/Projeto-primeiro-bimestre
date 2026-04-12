@@ -48,7 +48,7 @@ header nav a{
     transition: all 1s;
 }
 header nav a:hover{
-    color:rgb(255, 62, 169);
+    color:rgb(197, 39, 126);
     text-decoration: underline;
 }
 
