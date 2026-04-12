@@ -57,6 +57,7 @@ section{
     top: 100px;
     width: 40%;
     float: left;
+    
 }
 section h1{
     position: relative;
@@ -77,8 +78,12 @@ section img{
 .apresentacao{
     position: relative;
     top: 160px;
-    width: 60%;
+    width: 50%;
+    margin: 0px 20px;
     float: left;
+    border: 8px  solid rgb(21,21,21);
+    background-color: rgb(26, 26, 26);
+    box-sizing: border-box;
 }
 .apresentacao h2{
     position: relative;
@@ -152,7 +157,7 @@ section img{
 .mostrar{
     display: block;
 }
-.button{
+button{
     display: block;
     margin: 150px auto;
     padding: 30px 60px;
@@ -167,6 +172,11 @@ button:hover{
     background-color: rgb(255, 62, 169);
     color: rgb(26, 26, 26);
     padding: 40px 70px;
+}
+button a{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    transition: all 0.5s;
 }
 footer{
     width: 100%;
