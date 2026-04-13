@@ -170,13 +170,13 @@ button:hover{
 }
 .slide {
     width: 33.33%;
-    position: relative;
+    position: relative; //*coloca na horizontal*//
     transition: 0.6s;
 }
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; //*preenche espaço*//
     filter: brightness(0.9); /* Escurece*/
 }
 .novidade {
@@ -200,9 +200,9 @@ button:hover{
     margin: 10px 0;
     text-transform: uppercase;
 }
-#slide1:checked ~ .slides { margin-left: 0; }
-#slide2:checked ~ .slides { margin-left: -100%; }
-#slide3:checked ~ .slides { margin-left: -200%; }
+#slide1:checked ~ .slides { margin-left: 0; } //*mostra primeira imagem*//
+#slide2:checked ~ .slides { margin-left: -100%; } //*mostra segunda imagem*//
+#slide3:checked ~ .slides { margin-left: -200%; }//*mostra a terceira*//
 
 /* Estilo dos Botões de Seleção (Navegação) */
 .navigation {
@@ -212,18 +212,6 @@ button:hover{
     transform: translateX(-50%);
     display: flex;
 }
-
-.bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid rgb(26, 26, 26);
-    background-color: rgb(26, 26, 26);
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-    border-radius: 30px;
-}
-
 .bar:hover { background: rgb(33, 87, 79); }
 #slide1:checked ~ .navigation label[for="slide1"],
 #slide2:checked ~ .navigation label[for="slide2"],
@@ -310,4 +298,38 @@ footer{
     33%, 53% { margin-left: -100%; }
     66%, 86% { margin-left: -200%; }
     100% { margin-left: 0; }              
+}
+@media (max-width: 500px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column; 
+        align-items: center;
+        height: auto; 
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    header nav {
+        text-align: center; 
+        background-color: rgb(26, 26, 26);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    
+    }
+    header img{
+        width: 50%;
+        margin: 5px 120px;
+       
+
+    }
+    header nav{
+        width: 100%;
+        flex-direction: column; /* Links um abaixo do outro */
+        gap: 15px;      /* Espaçamento entre os links */
+        padding: 20px 0;
+    }
 }

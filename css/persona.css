@@ -147,7 +147,7 @@ section img{
     border: 7px solid rgb(21, 21, 21);
     background-color: rgb(26, 26, 26);
 }
-.btn{
+.b{
     color: white;
     padding: 5px;
 }
@@ -193,36 +193,97 @@ footer{
     0%{margin-bottom: 0px;}
     50%{margin-bottom: +10px;}
 }
-@media (max-width: 420px){
-    main{
+@media (max-width: 500px) {
+
+    header {
+        position: fixed;
         width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column; 
+        align-items: center;
+        height: auto; 
+        padding: 10px 0;
+        box-sizing: border-box;
     }
-    .grid{
-        grid-template-columns: 100%;
-    }
-    header nav ul{
-        display: block;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-    header nav ul li{
+    header nav {
+        text-align: center; 
+        background-color: rgb(26, 26, 26);
         width: 100%;
-    }
-    header nav{
-        display: none;
+        position: absolute;
+        top: 60px;
+    
     }
     header img{
-        width: 300px;
+        width: 50%;
+        margin: 5px 120px;
+       
+
     }
-    .menu{
-        display: block;
-        border: 1px solid #fff;
-        padding: 15px 10px;
-        color:#fff;
-        float: right;
-        margin-top: 15px;
-        border-radius: 5px;
+    header nav{
+        width: 100%;
+        flex-direction: column; /* Links abaixo */
+        gap: 15px;      /* Espaçamento links */
+        padding: 20px 0;
+    }
+    section, 
+    .apresentacao, 
+    .dor, 
+    .desejos,
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 120px; /* Espaço para o header fixo */
+        padding-bottom: 50px; /* Espaço para o footer */
+    }
+
+    /* 4. Ajuste das Seções de Texto e Imagem */
+    section img {
+        margin: 20px 0;
+    }
+
+    .apresentacao, section {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* 5. Ajuste das Grades (Dor e Desejos) */
+    .dor, .desejos {
+        padding: 40px 10px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Transforma a grade em uma única coluna */
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* 6. Ajuste do Botão */
+    button {
+        margin: 40px auto !important;
+        width: 80%;
+        padding: 20px !important;
+        font-size: 0.8rem;
+    }
+    
+    button:hover {
+        padding: 25px !important;
+    }
+
+    /* 7. Footer */
+    footer {
+        position: relative; /* Evita que ele tampe conteúdo em telas pequenas */
+        margin-top: 20px;
     }
 }
+}
+
 

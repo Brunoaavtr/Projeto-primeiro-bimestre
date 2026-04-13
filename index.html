@@ -22,6 +22,7 @@
             <a href="index.html" title="Home">
                 <img src="IMG/LogoP.png" alt="home" title="Home" width="13%">
             </a>
+
             <nav>
                 <a href="index.html" title="Home">HOME</a>
                 <a href="midia.html" title="PERSONA">MIDIA</a>
@@ -55,6 +56,15 @@
         document.getElementById("btn-play").disabled = true;
         }
         }
+    window.onload = function() {
+        const ANO_LANCAMENTO = 2026; // Defina aqui o ano do jogo
+        const anoAtual = new Date().getFullYear(); // Obtém o ano atual do sistema
+
+        if (anoAtual === ANO_LANCAMENTO) {
+            alert("ATENÇÃO!!! ESSE É O GRANDE LANÇAMENTO DO ANO");
+        }
+    }
+
 </script>
     </body>
 </html>

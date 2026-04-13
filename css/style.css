@@ -91,7 +91,7 @@ header nav a:hover{
 .destaque{
     color: rgb(255, 62, 169);
 }
-button{
+.jogar button{
     padding: 30px 60px;
     background-color: rgb(93, 247, 225);
     border: 5px solid rgb(26, 26, 26);
@@ -101,28 +101,28 @@ button{
     top: 70%;
     
 }
-button:hover{
+.jogar button:hover{
     background-color: rgb(255, 62, 169);
     color: rgb(255, 255, 255);
     padding: 40px 70px;
 }
-button a{
+.jogar button a{
     text-decoration: none;
     color: rgb(26, 26, 26);
     transition: all 0.5s;
 }
+
 @keyframes pingar{
     0%{margin-top: 0px;}
     50%{margin-top: -10px;}
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     header {
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        display: flex;
         flex-direction: column; 
         align-items: center;
         height: auto; 
@@ -130,17 +130,17 @@ button a{
         box-sizing: border-box;
     }
     header nav {
-        display: none; /* Esconde o menu por padrão no celular */
-        text-align: center; /* Organiza os links um abaixo do outro */
+        text-align: center; 
         background-color: rgb(26, 26, 26);
         width: 100%;
         position: absolute;
         top: 60px;
-        left: 0;
+    
     }
     header img{
-        width: 60%;
-        margin: 5px auto;
+        width: 50%;
+        margin: 5px 120px;
+       
 
     }
     header nav{
@@ -149,4 +149,30 @@ button a{
         gap: 15px;      /* Espaçamento entre os links */
         padding: 20px 0;
     }
+
+    .jogar {
+        width: 100%;            /* Ocupa quase toda a largura da tela */
+        margin: auto;     /* Centraliza a div na tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+           /* Centraliza os textos */
+    }
+
+    .logo {
+        width: 80%;            /* Ajusta a logo principal para telas pequenas */
+    }
+
+    .historia {
+        width: 100%;           /* Remove margens laterais do texto */
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    #btn-play {
+        width: 200px;          /* Define um tamanho fixo confortável para o toque */
+        margin-top: 100px;
+    }
+
 }

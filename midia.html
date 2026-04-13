@@ -129,14 +129,14 @@
 </footer>
 
     <script>
-        let counter = 1;
-    setInterval(() => {
+        let counter = 1; //controle//
+    setInterval(() => {                                 
         document.getElementById('slide' + counter).checked = true;
         counter++;
         if(counter > 3){
             counter = 1;
-        }
-    }, 5000); // Muda a cada 5 segundos
+        } // loop//
+    }, 5000); //5 segundos//
         function verificarAcesso() {
         let nome = prompt("Qual o seu nome?");
         let idade = parseInt(prompt("Qual a sua idade?"));
