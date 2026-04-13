@@ -122,7 +122,6 @@ button a{
         width: 100%;
         top: 0;
         left: 0;
-        /* O segredo: display flex em coluna e altura automática */
         display: flex;
         flex-direction: column; 
         align-items: center;
@@ -140,13 +139,11 @@ button a{
         left: 0;
     }
     header img{
-        display: block;
         width: 60%;
         margin: 5px auto;
 
     }
     header nav{
-        display: none; /* Escondido por padrão */
         width: 100%;
         flex-direction: column; /* Links um abaixo do outro */
         gap: 15px;      /* Espaçamento entre os links */

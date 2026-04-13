@@ -76,10 +76,9 @@
             </div>
             </div>
     </div>
-            <button>
-                <p class="btn">
-                <a href="jogo/index.html" target="_blank">PLAY</a>
-               </p>
+            <button onclick="verificarAcesso()">
+            <p class="btn">play
+            </p>
             </button>
 
 <footer>
@@ -88,8 +87,21 @@
 </footer>
 
     <script>
-    function mostrarmenu(){
-        document.querySelector("header nav").classList.toggle("mostrar");
+    function verificarAcesso() {
+    // Solicita o nome
+    let nome = prompt("Qual o seu nome?");
+    
+    // Solicita a idade e converte para número
+    let idade = parseInt(prompt("Qual a sua idade?"));
+
+    // Verifica a condição
+    if (idade >= 18) {
+        alert("Bem-vindo, " + nome + "!");
+        // Abre o link em uma nova aba
+        window.open("jogo/index.html", "_blank");
+    } else {
+        alert("Acesso Negado: Você precisa ter 18 anos ou mais para jogar.");
+    }
     }
     </script>
 </body>
