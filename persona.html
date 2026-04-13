@@ -76,9 +76,8 @@
             </div>
             </div>
     </div>
-            <button onclick="verificarAcesso()">
-            <p class="btn">play
-            </p>
+            <button id="btn-play" onclick="verificarAcesso()">
+            <p class="btn">play</p>
             </button>
 
 <footer>
@@ -87,22 +86,21 @@
 </footer>
 
     <script>
-    function verificarAcesso() {
-    // Solicita o nome
-    let nome = prompt("Qual o seu nome?");
-    
-    // Solicita a idade e converte para número
-    let idade = parseInt(prompt("Qual a sua idade?"));
+        function verificarAcesso() {
+        let nome = prompt("Qual o seu nome?");
+        let idade = parseInt(prompt("Qual a sua idade?"));
 
-    // Verifica a condição
-    if (idade >= 18) {
+        if (idade >= 18) {
         alert("Bem-vindo, " + nome + "!");
-        // Abre o link em uma nova aba
         window.open("jogo/index.html", "_blank");
-    } else {
+        } else {
         alert("Acesso Negado: Você precisa ter 18 anos ou mais para jogar.");
-    }
-    }
+        // Aplica o blur diretamente no botão
+        document.getElementById("btn-play").style.filter = "blur(10px)";
+        // Opcional: desativa o botão para não clicar de novo
+        document.getElementById("btn-play").disabled = true;
+        }
+        }
     </script>
 </body>
 </html>
