@@ -250,7 +250,7 @@ footer{
         width: 100%;
     }
     .dor, .desejos {
-        padding: 40px 10px !important;
+        padding: 40px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -262,17 +262,15 @@ footer{
         width: 100%;
         gap: 15px;
     }
-
-    /* 6. Ajuste do Botão */
     button {
-        margin: 40px auto !important;
+        margin: 40px auto;
         width: 80%;
-        padding: 20px !important;
+        padding: 20px ;
         font-size: 0.8rem;
     }
     
     button:hover {
-        padding: 25px !important;
+        padding: 25px;
     }
 
     /* 7. Footer */
