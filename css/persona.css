@@ -28,11 +28,11 @@ body{
 }
 
 header{
-    position: fixed;     /*parado na tela*/
+    position: fixed;     /*pare*/
     top: 0;              /*topo */
     left: 0;             
-    width: 100%;         /* Ocupa toda a largura da tela */
-    z-index: 1000;       /* Fica na frente*/
+    width: 100%;         /* Ocupa tela */
+    z-index: 1000;       /* Fica frente*/
     background-color: rgb(26, 26, 26);
     padding: 10px;
     box-shadow: 1px 1px 4px rgb(93, 247, 225);
@@ -236,11 +236,10 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 120px; /* Espaço para o header fixo */
-        padding-bottom: 50px; /* Espaço para o footer */
+        padding-top: 120px; /* Espaco header*/
+        padding-bottom: 50px; /* Espaco footer */
     }
 
-    /* 4. Ajuste das Seções de Texto e Imagem */
     section img {
         margin: 20px 0;
     }
@@ -250,8 +249,6 @@ footer{
         padding: 20px;
         width: 100%;
     }
-
-    /* 5. Ajuste das Grades (Dor e Desejos) */
     .dor, .desejos {
         padding: 40px 10px !important;
         display: flex;
@@ -261,7 +258,7 @@ footer{
     }
 
     .grid {
-        grid-template-columns: 1fr; /* Transforma a grade em uma única coluna */
+        grid-template-columns: 1fr; /*unica coluna */
         width: 100%;
         gap: 15px;
     }
@@ -280,7 +277,7 @@ footer{
 
     /* 7. Footer */
     footer {
-        position: relative; /* Evita que ele tampe conteúdo em telas pequenas */
+        position: relative;
         margin-top: 20px;
     }
 }
