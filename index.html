@@ -50,14 +50,12 @@
         window.open("jogo/index.html", "_blank");
         } else {
         alert("Acesso Negado: Você precisa ter 18 anos ou mais para jogar.");
-        // Aplica o blur diretamente no botão
-        document.getElementById("btn-play").style.filter = "blur(10px)";
-        // Opcional: desativa o botão para não clicar de novo
-        document.getElementById("btn-play").disabled = true;
+        document.getElementById("btn-play").style.filter = "blur(10px)";  //blur
+        document.getElementById("btn-play").disabled = true;      //desativa
         }
         }
     window.onload = function() {
-        const ANO_LANCAMENTO = 2026; // Defina aqui o ano do jogo
+        const ANO_LANCAMENTO = 2026; //ano do jogo
         const anoAtual = new Date().getFullYear(); // Obtém o ano atual do sistema
 
         if (anoAtual === ANO_LANCAMENTO) {
